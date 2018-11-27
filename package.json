@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@shopify/polaris": "^3.1.1",
@@ -13,11 +13,13 @@
     "react-dom": "^16.3.1",
     "react-hot-loader": "^4.3.12",
     "react-moment": "^0.7.0",
+    "react-object-inspector": "^0.2.1",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",
     "react-scripts": "^2.1.1",
     "redux": "^3.7.2",
     "redux-devtools-extension": "^2.13.5",
+    "redux-logger": "^3.0.6",
     "redux-thunk": "^2.2.0"
   },
   "scripts": {
