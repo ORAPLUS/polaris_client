@@ -4,7 +4,7 @@ import ProductFeed from "./ProductFeed";
 import Skeleton from "../common/Skeleton";
 import { connect } from "react-redux";
 import { getProducts } from "../../actions/productActions";
-import { Page, Loading, Layout, Card } from "@shopify/polaris";
+import { Page, Loading, Layout } from "@shopify/polaris";
 
 class Products extends Component {
   componentDidMount() {
@@ -24,10 +24,8 @@ class Products extends Component {
     return (
       <Page title="Products">
         <Layout sectioned>
-          <Card>
-            {productContent}
-            {loading ? <Skeleton /> : null}
-          </Card>
+          {productContent}
+          {loading ? <Skeleton /> : null}
         </Layout>
       </Page>
     );
