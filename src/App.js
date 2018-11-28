@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import ModeDevForm from "./components/ModeDevForm";
-import HeaderForm from "./components/HeaderForm";
-import HidePaypalCart from "./components/HidePaypalCartForm";
-import HideShopifyPoweredByForm from "./components/HideShopifyPoweredByForm";
+import Products from "./components/products/Products";
+import HeaderForm from "./components/header/HeaderForm";
+import HidePaypalCart from "./components/paypal/HidePaypalCartForm";
+import HideShopifyPoweredByForm from "./components/shopify/HideShopifyPoweredByForm";
 import {
   AppProvider,
   Navigation,
@@ -42,7 +42,7 @@ class App extends Component {
   defaultState = {
     emailFieldValue: "Ayoub@youbb.us",
     nameFieldValue: "Ayoub Youb",
-    dev: <ModeDevForm />,
+    dev: <Products />,
     header: <HeaderForm />,
     hidePaypalCart: <HidePaypalCart />,
     hideShopifyPoweredBy: <HideShopifyPoweredByForm />
@@ -56,7 +56,7 @@ class App extends Component {
     modalActive: false,
     supportSubject: "",
     supportMessage: "",
-    loadingPage: ""
+    loadingPage: this.defaultState.dev // a remplacer svp par ""
   };
   render() {
     const {
